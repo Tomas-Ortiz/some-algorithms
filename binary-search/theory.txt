@@ -1,0 +1,12 @@
+=============================
+References
+=============================
+
+1. What are algorithms: https://es.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms
+2. A guessing game: https://es.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/a/a-guessing-game
+3. Route finding: https://es.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/a/route-finding
+4. Binary Search: https://es.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search
+5. Implementing binary search of an array: https://es.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
+6. Logarithms: https://es.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/v/logarithms
+7. Running time of binary search: https://es.khanacademy.org/computing/computer-science/algorithms/binary-search/a/running-time-of-binary-search
+
