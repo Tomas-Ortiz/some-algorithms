@@ -1,0 +1,12 @@
+=============================
+References
+=============================
+
+1. Asymptotic notation: https://es.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
+2. Big theta notation: https://es.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation
+3. Functions in asymptotic notation: https://es.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/functions-in-asymptotic-notation
+4. Big O notation: https://es.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
+5. Big Omega notation: https://es.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-omega-notation
+
+https://www.youtube.com/watch?v=IZgOsEC0NIbw&ab_channel=BettaTech
+https://www.youtube.com/watch?v=MyAiCtuhiqQ&ab_channel=ChioCode

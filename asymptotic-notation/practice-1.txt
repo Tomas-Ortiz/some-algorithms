@@ -1,0 +1,69 @@
+=================================================================================================
+Análisis asintótico del tiempo de ejecución para el ordenamiento por selección (ver ejercicio)
+=================================================================================================
+
+Se ejecutan 3 líneas de código por una sola llamada a swap (tiempo constante)
+
+¿Cuántas líneas de código se ejecutan por una sola llamada a indexOfMinimum? 
+Tenemos que contabilizar los bucles dentro de indexOfMinimum. 
+¿Cuántas veces se ejecuta este bucle en una llamada a indexOfMinimum? Depende del tamaño del subarreglo 
+sobre el cual se esté iterando. Si el subarreglo es todo el arreglo (primer paso), 
+el cuerpo del bucle se ejecuta n veces. Si el subarreglo es de tamaño 6, entonces se ejecuta 6 veces.
+
+Si el arreglo tiene 8 elementos, obtenemos 8+7+6+5+4+3+2+1 = 36 veces.
+La fórmula para calcularlo (serie aritmética) es: (n + 1) * (n / 2), donde
+ n + 1 es la suma del valor más grande y el más pequeño
+ n / 2 es el número de parejas
+
+Ej. 8+1 * (8 / 2) = 36
+
+Por lo tanto, la suma de números de 1 a n es (n + 1) * (n / 2), que equivale a n^2/2 + n/2
+
+El tiempo total de ejecución para el ordenamiento por selección tiene tres partes:
+1. El tiempo de ejecución para todas las llamadas a indexOfMinimum.
+2. El tiempo de ejecución para todas las llamadas a swap.
+3. El tiempo de ejecución para el resto del bucle en la función selectionSort.
+
+Las partes 2 y 3 son fáciles. Sabemos que hay n llamadas a swap y que cada llamada tarda un tiempo constante Θ(n). 
+El resto del bucle en selectionSort está incrementando la variable del bucle y llamando indexOfMinimum 
+y swap, así que tarda un tiempo constante para cada una de las n iteraciones Θ(n).
+
+El tiempo total para todas la llamadas a indexOfMinimum es alguna constante por n^2/2 + n/2
+En términos de la notación Θ grande, no nos importa ese factor constante, ni tampoco el factor de 1/2 o el término de orden inferior. 
+El resultado es que el tiempo de ejecución para todas las llamadas a indexOfMinimum es Θ(n^2).
+
+
+Al sumar los tiempos de ejecución para las tres partes tenemos:
+- Θ(n^2) para las llamadas a indexOfMinimum
+- Θ(n) para las llamadas a swap
+- Θ(n) para el resto del bucle en selectionSort
+
+El término Θ(n^2) es el más significativo, así que decimos que el tiempo de ejecución del 
+ordenamiento por selección es Θ(n^2).
+
+Ningún caso es particularmente bueno ni malo para el ordenamiento por selección. 
+El bucle en indexOfMinimum siempre va a hacer n^2/2 + n/2 iteraciones, sin importar la entrada.
+Por lo tanto, podemos decir que el ordenamiento por selección se ejecuta en un tiempo Θ(n^2)
+para todos los casos.
+
+=========
+Ejemplo
+=========
+Vamos a ver cómo el tiempo de ejecución de Θ(n^2) afecta el tiempo de ejecución real. 
+Digamos que el ordenamiento por selección tarda aproximadamente n^2/10^6 segundos en ordenar n valores. 
+
+¿Si n = 100?
+El tiempo de ejecución del ordenamiento por selección es alrededor de
+100^2 / 10^6 = 1/100 segundos (10 ms). Eso parece ser bastante rápido.
+
+¿si n = 1000? 
+Entonces se tarda alrededor de 1000^2/10^6 = 1 segundo. 
+
+¿si n = 10000?
+Entonces se tarda alrededor de 10000^2/10^6 = 100 segundos. 
+
+¿si n = 1.000.000?
+Entonces se tarda 1000000^2/10^6 = 1.000.000 segundos (277 horas)
+
+Concluimos entonces que el ordenamiento por selección no es eficiente para arreglos de gran tamaño
+

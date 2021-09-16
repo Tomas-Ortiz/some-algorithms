@@ -1,0 +1,7 @@
+=============================
+References
+=============================
+
+1. Sorting: https://es.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/sorting
+2. Selection sort pseudocode: https://es.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/selection-sort-pseudocode
+3. Analysis of selection sort: https://es.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/analysis-of-selection-sort

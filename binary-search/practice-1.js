@@ -9,17 +9,16 @@ var target = 67,
   index = 0,
   steps = 0;
 
-var linearSearch = (array, target) => {
+var doLinearSearch = (array, target) => {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === target) {
       return [i, i + 1];
-    } else if (i === array.length - 1) {
-      return [-1, i + 1];
     }
   }
+  return [-1, array.length];
 };
 
-[index, steps] = linearSearch(primes, target);
+[index, steps] = doLinearSearch(primes, target);
 
 console.log('=============================================');
 console.log('Lineal Search');
@@ -27,7 +26,7 @@ console.log('=============================================');
 console.log('The value', target, 'was found in the index', index);
 console.log('Steps =', steps);
 
-var binarySearch = (array, target) => {
+var doBinarySearch = (array, target) => {
   let min = 0,
     max = array.length - 1,
     steps = 0,
@@ -52,7 +51,7 @@ var calculateAttempts = (n, base) => {
   return Math.floor(Math.log(n) / Math.log(base) + 1);
 };
 
-[index, steps] = binarySearch(primes, target);
+[index, steps] = doBinarySearch(primes, target);
 
 console.log('=============================================');
 console.log('Binary Search');
@@ -65,6 +64,6 @@ console.log(
   calculateAttempts(primes.length, 2)
 );
 
-assert.equal(binarySearch(primes, 41)[0], 12);
-assert.equal(binarySearch(primes, 73)[0], 20);
-assert.equal(binarySearch(primes, 97)[0], 24);
+assert.equal(doBinarySearch(primes, 41)[0], 12);
+assert.equal(doBinarySearch(primes, 73)[0], 20);
+assert.equal(doBinarySearch(primes, 97)[0], 24);
