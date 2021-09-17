@@ -1,6 +1,6 @@
-=================================================================================================
-Análisis asintótico del tiempo de ejecución para el ordenamiento por selección (ver ejercicio)
-=================================================================================================
+====================================================================================================
+Análisis asintótico del tiempo de ejecución para el ordenamiento por selección (ver ejercicio antes)
+====================================================================================================
 
 Se ejecutan 3 líneas de código por una sola llamada a swap (tiempo constante)
 

@@ -1,0 +1,7 @@
+=============================
+References
+=============================
+
+1. Insertion sort: https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort
+2. Insertion sort pseudocode: https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort-pseudocode
+3. Analysis of insertion sort: https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/analysis-of-insertion-sort

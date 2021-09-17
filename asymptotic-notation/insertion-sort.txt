@@ -1,0 +1,69 @@
+====================================================================================================
+Análisis asintótico del tiempo de ejecución para el ordenamiento por inserción (ver ejercicio antes)
+====================================================================================================
+
+Del mismo modo que el ordenamiento por selección, el ordenamiento por inserción itera sobre los índices del arreglo.
+Así como cada llamada a indexOfMinimum tardó una cantidad de tiempo que dependía del tamaño del subarreglo 
+ordenado, lo mismo pasa con cada llamada a insert.
+
+Tomemos una situación en donde llamamos a insert y el valor que se inserta en un subarreglo es menor 
+que cualquier elemento en el subarreglo. 
+Por ejemplo, si estamos insertando 0 en el subarreglo [2, 3, 5, 7, 11], entonces todos los elementos 
+del subarreglo tienen que recorrerse una posición hacia la derecha.
+
+En general, si estamos insertando en un subarreglo con k elementos, todos los k elementos 
+podrían tener que recorrerse una posición.  
+
+En lugar de contar exactamente cuántas líneas de código necesitamos para probar un elemento contra 
+una llave y recorrer el elemento, convengamos que es un número constante de líneas; 
+llamemos a esa constante c.
+
+Supón que en cada llamada a insert, el valor que se está insertando es menor que cada elemento en el 
+subarreglo a su izquierda. 
+Cuando llamamos insert la primera vez, k = 1. La segunda vez, k=2. La tercera vez, k=3. 
+Y así sucesivamente hasta la última vez, cuando k = n-1.
+
+Por lo tanto, el tiempo total que tarda la inserción en un subarreglo ordenado es:
+
+ c*1 + c*2 + c*3 + ... c*(n-1) = c * (1 + 2 + 3 + ... + (n-1))
+
+Esa suma es una serie aritmética, excepto que va hasta n-1, en lugar de n. 
+Al usar la fórmula para una serie aritmética, obtenemos que el tiempo total que tarda la inserción 
+en el subarreglo ordenado es:
+
+ c * (n - 1 + 1)((n - 1) / 2) = cn^2/2 - cn/2
+
+Al usar notación Θ grande, descartamos el término de orden inferior cn/2 y los factores constantes c y 1/2,
+para obtener el resultado de que el tiempo de ejecución de la inserción, en este caso, es de Θ(n^2).
+
+El ordenamiento por inserción puede tardar menos tiempo que Θ(n^2). 
+Si ningún elemento en el subarreglo necesita recorrerse hacia la derecha, 
+entonces esta llamada de insert tarda solo un tiempo constante. 
+Supón que cada llamada de insert tarda un tiempo constante. Como hay n-1 llamadas a insert, 
+si cada llamada tarda un tiempo que es alguna constante c, entonces el tiempo total para el ordenamiento 
+por inserción es c*(n−1), que es Θ(n), no Θ(n^2).
+
+Una llamada a insert causa que cada elemento se recorra si la llave que está siendo insertada es menor 
+que todos los elementos a su izquierda. Entonces, si cada elemento es menor que todos los elementos 
+a su izquierda, el tiempo de ejecución del ordenamiento por inserción es Θ(n^2).
+Entonces un arreglo ordenado de manera inversa es el peor de los casos para el ordenamiento por inserción.
+
+¿Qué pasa en el caso contrario? Una llamada a insert no causa que ningún elemento se recorra hacia 
+la derecha si la llave que está siendo insertada es mayor o igual que todos los elementos a su izquierda. 
+Entonces, si todo elemento es mayor o igual a cualquier elemento a su izquierda, el tiempo de ejecución 
+del ordenamiento por inserción es Θ(n).
+Esta situación ocurre si el arreglo inicia ya ordenado, y entonces un arreglo ya ordenado 
+es el mejor caso para un ordenamiento por inserción.
+El ordenamiento por inserción es rápido cuando se le da un arreglo casi ordenado.
+
+Para resumir los tiempos de ejecución del ordenamiento por inserción:
+
+- El peor caso: Θ(n^2)
+- El mejor caso: Θ(n)
+- El caso promedio para un arreglo aleatorio: Θ(n^2)
+- El caso "casi ordenado": Θ(n)
+
+Si tuvieras que hacer una declaración general que aplique a todos los casos del ordenamiento por inserción, 
+tendrías que decir que se ejecuta en un tiempo O(n^2), es decir, como tiempo máximo (cota superior).
+No puedes decir que se ejecuta en un tiempo Θ(n^2) en todos los casos, ya que el mejor caso 
+se ejecuta en un tiempo Θ(n). Tampoco se puede decir lo contrario.
