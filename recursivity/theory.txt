@@ -1,0 +1,12 @@
+=============================
+References
+=============================
+
+1. Recursion: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion
+2. The factorial function: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/the-factorial-function
+3. Properties of recursive algorithms: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/properties-of-recursive-algorithms
+4. Palindrome: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/using-recursion-to-determine-whether-a-word-is-a-palindrome
+5. Computing powers of a number: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/computing-powers-of-a-number
+6. https://www.youtube.com/watch?v=YwRjEOFxvO0&ab_channel=ChioCode
+7. Improving efficiency of recursive functions: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/improving-efficiency-of-recursive-functions
+8. Fibonacci: https://www.youtube.com/watch?v=k6I_TOW6O2o&ab_channel=KhanAcademyEspañol
