@@ -10,3 +10,6 @@ References
 6. https://www.youtube.com/watch?v=YwRjEOFxvO0&ab_channel=ChioCode
 7. Improving efficiency of recursive functions: https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/improving-efficiency-of-recursive-functions
 8. Fibonacci: https://www.youtube.com/watch?v=k6I_TOW6O2o&ab_channel=KhanAcademyEspañol
+9. Hanoi Tower: https://es.khanacademy.org/computing/computer-science/algorithms/towers-of-hanoi/a/towers-of-hanoi
+                https://es.khanacademy.org/computing/computer-science/algorithms/towers-of-hanoi/a/towers-of-hanoi-continued
+                https://www.youtube.com/watch?v=rf6uf3jNjbo
