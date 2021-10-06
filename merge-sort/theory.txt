@@ -1,0 +1,7 @@
+=============================
+References
+=============================
+
+1. Divide and conquer algorithms: https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms
+2. Overview of merge sort: https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort
+3. Linear time merging: https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/linear-time-merging
