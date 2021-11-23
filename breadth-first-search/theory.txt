@@ -1,0 +1,8 @@
+=============================
+References
+=============================
+
+1. Describing graphs: https://es.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/describing-graphs
+2. Representing graphs: https://es.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
+3. Breadth-first search and its uses: https://es.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/breadth-first-search-and-its-uses
+4. The breadth first search algorithm: https://es.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/the-breadth-first-search-algorithm
